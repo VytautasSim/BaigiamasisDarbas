@@ -1,4 +1,8 @@
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
     background-color: #1C1C1C;
     color: white;
     width: 100%;
@@ -8,8 +12,7 @@ header {
 .container {
     display: flex;
     flex-direction: row;
-    // justify-content: space-around;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -28,4 +31,5 @@ a {
     text-decoration: none;
     color: white;
     font-size: 14px;
+    opacity: 0.6;
 }
