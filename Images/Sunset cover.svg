@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1400" height="595" viewBox="0 0 1400 595">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="1" x2="-0.057" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6696e2"/>
+      <stop offset="1" stop-color="#e27866"/>
+    </linearGradient>
+  </defs>
+  <rect id="Features_Panel_1" data-name="Features Panel 1" width="1400" height="595" opacity="0.419" fill="url(#linear-gradient)"/>
+</svg>
