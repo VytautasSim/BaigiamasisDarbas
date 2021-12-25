@@ -84,9 +84,7 @@
             border-radius: 10px 10px 0px 0px;
 
         }
-
         
-
         .smaler-text {
             font-size: 16px;
             padding-left: 50px;
@@ -111,16 +109,24 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-top: 28px;
 
             .get-started {
                 // display: flex;
                 // justify-content: center;
                 // align-items: center;
-                padding-top: 60px;
-                color: black;
+                //padding-top: 50px;
+                height: 57px;
+                max-width: 360px;
+                width: 100%;
+
+                color: #FFFFFF;
                 font-weight: bold;
                 font-size: 18px;
                 border: none;
+                text-decoration: none;
+                background-color: #41D395;
+                border-radius: 0px 0px 10px 10px;
             }
         }
 
