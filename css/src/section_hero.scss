@@ -37,40 +37,53 @@
 
         }
 
-        .radio-input-wrap {
-            input {                 //paslepiu default radio button stiliu
-                display: none;
-            }
-
-            // input:checked ~ label:before {
-            //     background: #41D395;
-            // }
-
-            input:checked ~ label {
-                font-weight: bolder;
-            }
-
-            label {
-                text-transform: uppercase;
-                cursor: pointer;
-                padding-right: 17px;
- 
-                // &:before {
-                //     content: '';
-                //     display: inline-block;
-                //     width: 12px;
-                //     height: 12px;
-                //     border-radius: 50%;
-                //     border: 1px solid #41D395;
-                //     transition: 0.3s ease-in-out;
-                // }
-
-
-
-            }
-
+        .radio {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            margin-right: 25px;
         }
 
+        .radio-input {
+            display: none;
+        }
+
+        .checkmark {
+            width: 13px;
+            height: 13px;
+            border: 1px solid #41D395;
+            border-radius: 50%;
+            margin-right: 5px;
+            box-sizing: border-box;
+            padding: 2px;
+        }
+
+        .checkmark::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: #41D395;
+            border-radius: 50%;
+
+            transform: scale(0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .radio-input:checked + .checkmark::after {
+            transform: scale(1);
+        }
+
+        .radio-input:checked ~ label {
+            font-weight: bold;
+        }
+
+        label {
+            text-transform: uppercase;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+       
     }
 
 }
