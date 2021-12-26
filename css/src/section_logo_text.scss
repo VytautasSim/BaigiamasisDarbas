@@ -6,11 +6,18 @@
     .container {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-content: center;
         
         .big-logo-container {
-            margin-right: 60px;
+            margin: 90px 60px 90px 0;
+            
+            .big-logo-image {
+                position: relative;
+                padding: 10px;
+                top: 50%;
+                transform: translate(0%, -50%);
+            }
             
         }
 
@@ -22,7 +29,7 @@
             flex-direction: column;
             align-content: center;
             justify-content: space-evenly;
-            margin: 90px 0;
+            margin: 90px 0 90px 90px;
 
 
             h2 {
