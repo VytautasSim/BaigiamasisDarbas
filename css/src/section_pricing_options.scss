@@ -1,0 +1,66 @@
+.pricing-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6696E2;
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            color: white;
+            font-size: 36px;
+            //background-color: black;
+            margin: 0;
+            padding-top: 100px;
+            padding-bottom: 30px;
+        }
+
+        .main-text {
+            color: white;
+            font-size: 14px;
+            border-top: 4px solid #41D395;
+            padding-top: 30px;
+            padding-bottom: 60px;
+            //background-color: black;
+        }
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+
+        .card {
+            max-width: 340px;
+            width: 100%;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            color: white;
+            box-sizing: border-box;
+
+
+        
+        
+            li {
+                list-style: none;
+                text-transform: uppercase;
+                color: #86878B;
+            }
+        }
+    }
+}
+
+
+
+
