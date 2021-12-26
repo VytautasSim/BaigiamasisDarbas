@@ -29,6 +29,9 @@
             padding: 0;
 
             li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 width: 100px;
                 height: 100px;
                 background-color: #A37169;
@@ -36,8 +39,23 @@
                 transition: 0.3s ease-in-out;
                 cursor: pointer;
 
+                span {
+                    color: #FFFFFF;
+                    opacity: 0.5;
+                    transform: rotate(-45deg);
+
+                    &.active {
+                        opacity: 1;
+                    }
+                }
+
                 &:not(:last-child) {
                     margin-bottom: 20px; //Visi li tagai bet ne paskutinis turi margin bottom
+                }
+
+                &.active {
+                    background-color: #E27866;
+                
                 }
             }
 
