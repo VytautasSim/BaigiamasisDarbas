@@ -19,6 +19,9 @@
 
     .container {
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .tab-navigation {
@@ -59,6 +62,14 @@
                 }
             }
 
+        }
+    }
+
+    .tab-content {
+        display: none;
+
+        &.active {    //elementas nera atvaizduojamas, nebent jisai turi "active" class
+            display: block;
         }
     }
 }
