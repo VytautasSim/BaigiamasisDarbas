@@ -94,7 +94,6 @@
                     font-size: 14px;
                     background-color: #41D395;
                     padding: 10px 0;
-                    transform: scaleY(30px);
                 }
                 
             }
@@ -114,7 +113,7 @@
 
 .card:hover {
     cursor: pointer;
-    transform: scaleX(0) scaleY(-20px);
+    // transform: scaleX(0) scaleY(-20px);
 }
 
 
