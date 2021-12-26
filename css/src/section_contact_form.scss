@@ -1,0 +1,34 @@
+.Contact-form {
+    background-color: #E27866;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .contact-form-head {
+            text-align: center;
+            color: white;
+
+            .contact-form-text-big {
+                font-size: 36px;
+                font-weight: bolder;
+            }
+
+            .contact-form-text-smal {
+                font-size: 14px;
+            }
+        }
+
+        .contact-form-body {
+            
+        }
+
+    }
+
+
+
+
+
+}
