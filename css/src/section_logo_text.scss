@@ -15,11 +15,14 @@
         }
 
         .big-text-container {
-            max-width: 600px;
-            width: 100%;
+            // max-width: 600px;
+            // width: 100%;
             height: auto;
-            //padding-left: 60px;
-            // padding-right: 5px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-evenly;
+            margin: 90px 0;
 
 
             h2 {
@@ -41,6 +44,46 @@
                 color: white;
                 width: 80%;
                 margin-bottom: 27px;
+            }
+
+            .inside-form {
+                position: relative;
+                // display: flex;
+                // flex-direction: row;
+
+                .inside-form-text {
+                    margin: 0;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    .inside-form-text-title {
+                        font-weight: bold;
+                    }
+                }
+
+                .inside-form-image {
+                    float: left;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: #E27866;
+                    margin-right: 20px;
+                    margin-bottom: 30px;
+
+                    .inside-form-img {
+                        position: relative;
+                        padding: 10px;
+                        top: 50%;
+                        transform: translate(0%, -50%);
+                    }
+                    
+                    img:last-child {
+                        transform: translate(8%, -50%);
+                    }
+                    
+                }
             }
         }
 
