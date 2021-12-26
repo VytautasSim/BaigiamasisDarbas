@@ -39,23 +39,32 @@
     
 
         .card {
-            max-width: 340px;
+            // display: flex;
+            // justify-content: center;
+            // align-content: center;     
+            max-width: 360px;
             width: 100%;
-            padding: 20px;
+            margin: 40px;
             background-color: #FFFFFF;
             border-radius: 8px;
-            width: 200px;
             text-align: center;
             color: white;
             box-sizing: border-box;
 
-
+            .main-info {
+                position: relative;
+                top: 0;
+                left: 0;
+                background-color: black;
+            }
         
         
             li {
                 list-style: none;
+                font-size: 14px;
                 text-transform: uppercase;
                 color: #86878B;
+                padding-right: 45px;
             }
         }
     }
