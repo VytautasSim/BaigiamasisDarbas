@@ -26,6 +26,21 @@
 
         ul {
             list-style: none;
+            padding: 0;
+
+            li {
+                width: 100px;
+                height: 100px;
+                background-color: #A37169;
+                box-shadow: 0px 3px 6px #00000029;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+
+                &:not(:last-child) {
+                    margin-bottom: 20px; //Visi li tagai bet ne paskutinis turi margin bottom
+                }
+            }
+
         }
     }
 }
