@@ -1,7 +1,6 @@
 // About section tab navigation
 const tabNavigationElements = document.querySelectorAll(".about .tab-navigation li");
 const tabContentElements = document.querySelectorAll(".about .tab-content");
-const tabTextElements = document.querySelectorAll(".about .tab-navigation li span");
 
 //about tage tab-navigation containeryje pasirenkame visus li
 //
@@ -20,11 +19,6 @@ for (let tabElements of tabNavigationElements) {
         
         removeActiveClassesFromElements(tabNavigationElements);
         this.classList.add("active"); //uzdedame class "active" ant elemento kuri paspaudziame
-
-        removeActiveClassesFromElements(tabTextElements);
-        this.classList.add("active"); //uzdedame class "active" ant elemento kuri paspaudziame
-        console.log(tabTextElements);
-
 
         removeActiveClassesFromElements(tabContentElements)
         document.querySelector('.tab-content[data-tab="'+target+'"]').classList.add('active'); 

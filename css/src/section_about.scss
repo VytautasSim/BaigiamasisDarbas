@@ -46,10 +46,7 @@
                     color: #FFFFFF;
                     opacity: 0.5;
                     transform: rotate(-45deg);
-
-                    &.active {
-                        opacity: 1;
-                    }
+                
                 }
 
                 &:not(:last-child) {
@@ -58,8 +55,13 @@
 
                 &.active {
                     background-color: #E27866;
-                    opacity: 1;
-                
+
+                    .tab-text {
+                        opacity: 1;
+                        font-weight: bold;
+                    }
+                    
+
                 }
             }
 
