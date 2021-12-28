@@ -110,20 +110,59 @@
                 display: flex;
                 flex-direction: column;
 
-                .two-images-div {
-                    padding-bottom: 20px;
+                .images-div {
+                    position: relative;
                 }
 
-                    img:first-child {
-                        padding-right: 23px;
-                        
+                .two-images-div {
+                    display: flex;
+                    flex-direction: row;
+                    padding-bottom: 20px;
+                }  
+                    .image-overlay {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        opacity: 0;
+                        transition: .5s ease;
+                        background-color: #E27866;
+
                     }
+                
+                    .overlay-text {
+                        //display: none;
+                        position: absolute;
+                        color: #FFFFFF; 
+                        font-size: 20px;
+                        font-weight: bold;
+                        position: relative;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                    }
+                
+
+                .images-div:hover .image-overlay {
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+
+                img:first-child {
+                    padding-right: 27px;
+                        
+                }
                     
                 
 
-                .one-image-div {
-                    //position: absolute;
-                }
+                // //.one-image-div {
+                //     //position: absolute;
+                // }
             }
             
             // &:not(:last-child) {
