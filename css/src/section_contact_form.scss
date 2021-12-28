@@ -91,10 +91,11 @@
             }
     
             .radio-input:checked ~ label {
-                font-weight: bold;
+                opacity: 1;
             }
     
             label {
+                opacity: 0.5;
                 font-size: 9px;
                 text-transform: uppercase;
                 transition: transform 0.3s ease-in-out;
