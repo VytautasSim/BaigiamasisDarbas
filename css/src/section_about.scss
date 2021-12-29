@@ -112,6 +112,16 @@
 
                 .images-div {
                     position: relative;
+                    width: 167px;
+                    height: 167px;
+                    margin-right: 25px;
+                }
+
+                .big-images-div {
+                    position: relative;
+                    width: 361px;
+                    height: 176px;
+                    margin-right: 25px;
                 }
 
                 .two-images-div {
@@ -120,6 +130,21 @@
                     padding-bottom: 20px;
                 }  
                     .image-overlay {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        opacity: 0;
+                        transition: .5s ease;
+                        background-color: #E27866;
+
+                    }
+
+                    .big-image-overlay {
                         position: absolute;
                         top: 0;
                         bottom: 0;
@@ -146,6 +171,19 @@
                         transform: translate(-50%, -50%);
                         text-align: center;
                     }
+
+                    .big-overlay-text {
+                        //display: none;
+                        position: absolute;
+                        color: #FFFFFF; 
+                        font-size: 20px;
+                        font-weight: bold;
+                        position: relative;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                    }
                 
 
                 .images-div:hover .image-overlay {
@@ -153,9 +191,14 @@
                     cursor: pointer;
                 }
 
+                .big-images-div:hover .big-image-overlay {
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+
                 img:first-child {
                     padding-right: 27px;
-                        
+                       
                 }
                     
                 
