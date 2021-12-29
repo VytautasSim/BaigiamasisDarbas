@@ -93,7 +93,7 @@
 
         .text-input-lines {
             padding-left: 50px;
-            
+                      
             .text-input {
                 opacity: 0.6;
                 color: #D8D8D8;
@@ -103,6 +103,10 @@
                 margin-top: 17px;
                 border-bottom: 2px solid #D8D8D8;
             }      
+        }
+
+        input[type="text"]:invalid {
+            border-bottom: 2px solid red;
         }
 
         .submit-buton {
