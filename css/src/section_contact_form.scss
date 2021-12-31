@@ -27,11 +27,18 @@
 
                 h2 {
                     display: flex;
+                    align-items: center;
+                    justify-content: center;
                     font-size: 18px;
                     margin-left: 8px;
 
                     span {
                         font-size: 18px;
+                    }
+                    
+                    span:last-child {
+                        font-size: 12px;
+                        margin-left: 20px;
                     }
 
                 }
