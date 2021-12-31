@@ -22,14 +22,32 @@
                 }
             }
 
-            .info {
+            // .info {
 
-            }
+            // }
         }
 
         .swiper-pagination {
             position: static;
             margin-top: 85px;
+
+            .swiper-pagination-bullet {
+                margin: 0;
+                width: 10px;
+                height: 10px;
+                border: 1px solid #E27866;
+                background-color: transparent;
+                opacity: 1;
+                line-height: 0;
+
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+
+                &-active {
+                    background-color: #E27866;
+                }
+            }
         }
       }
 }
