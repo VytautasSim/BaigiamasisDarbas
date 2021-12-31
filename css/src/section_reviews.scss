@@ -1,11 +1,36 @@
 .reviews {
-    padding: 200px 0px;
+    padding: 80px 0px;
+    
+    // .container {
+    //     // display: flex;
+    //     // flex-direction: column;
+    //     // align-items: center;
+    //     // justify-content: center;
+    // }
+    
+    .reviews-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
 
-    h2 {
-        text-align: center;
-        text-transform: uppercase;
+        h2 {
+            text-align: center;
+            text-transform: uppercase; 
+        }
+
+        .line {
+            right: 50%;
+            width: 64px;
+            height: 3px;
+            border: 1px solid #6696E2; 
+            background-color: #6696E2;
+            margin-top: 30px;
+            margin-bottom: 60px;     
+        }
     }
-
+  
     .reviews-swiper {
   
         .single-review {

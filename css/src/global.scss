@@ -5,6 +5,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 1140px;
     width: 100%;
