@@ -27,3 +27,22 @@ for (let tabElements of tabNavigationElements) {
         
     });
 }
+
+// Reviews section swiper gallery //
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    autoHeight: true,
+    spaceBetween: 120,
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+
+  });
+
