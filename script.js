@@ -73,7 +73,24 @@ const swiper = new Swiper('.swiper', {
 
 // MY APIkey - f9f0d8ab8d0ddecdaafa120863acd0e3
 
-const url = "http://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=f9f0d8ab8d0ddecdaafa120863acd0e3";
+const url = "http://api.openweathermap.org/data/2.5/weather?q=Bergamo&units=metric&appid=f9f0d8ab8d0ddecdaafa120863acd0e3";
+const weatherElement = document.getElementById("weather-in-celsius");
 
+function getCurrentWeatherInCelsius() {
+    const http = new XMLHttpRequest();
+    http.open("GET", url);
+    http.addEventListener('load', function() {
+        const response = JSON.parse(http.response);
+        const temperature = response.main.temp;
 
+        if (temperature > 0) {
+            weatherElement.innerText = "+" + temperature.toFixed(0);
+        } else {
+            weatherElement.innerText = temperature.toFixed(0);
+        }
 
+    })
+    http.send();
+}
+
+window.addEventListener('load',getCurrentWeatherInCelsius);
