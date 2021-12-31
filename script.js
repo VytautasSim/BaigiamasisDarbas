@@ -32,11 +32,15 @@ for (let tabElements of tabNavigationElements) {
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
+    speed: 1200,
     slidesPerView: 3,
     slidesPerGroup: 3,
     autoHeight: true,
     spaceBetween: 120,
     loop: true,
+    autoplay: {
+        delay: 2000,
+    },
   
     // If we need pagination
     pagination: {
@@ -44,5 +48,32 @@ const swiper = new Swiper('.swiper', {
       clickable: true
     },
 
+    // Responsive breakpoints
+    breakpoints: {
+    // when window width is >= 320px
+        320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+        slidesPerView: 3,
+        spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+        slidesPerView: 3,
+        spaceBetween: 120
+        }
+    },
+
   });
+
+// Get weather data from openweather API
+
+// MY APIkey - f9f0d8ab8d0ddecdaafa120863acd0e3
+
+const url = "http://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=f9f0d8ab8d0ddecdaafa120863acd0e3";
+
+
 
