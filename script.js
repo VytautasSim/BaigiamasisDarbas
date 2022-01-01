@@ -32,7 +32,7 @@ for (let tabElements of tabNavigationElements) {
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    speed: 1200,
+    speed: 800,
     slidesPerView: 3,
     slidesPerGroup: 3,
     autoHeight: true,
@@ -50,22 +50,17 @@ const swiper = new Swiper('.swiper', {
 
     // Responsive breakpoints
     breakpoints: {
-    // when window width is >= 320px
-        320: {
+        // when window width is >= 800px
+        700: {
         slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 10
         },
-        // when window width is >= 480px
-        480: {
+
+        800: {
         slidesPerView: 3,
-        spaceBetween: 30
-        },
-        // when window width is >= 640px
-        640: {
-        slidesPerView: 3,
-        spaceBetween: 120
+        spaceBetween: 60
         }
-    },
+    }
 
   });
 
