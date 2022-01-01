@@ -70,8 +70,7 @@
 
     .tab-content {
         display: none;
-        
-
+    
         &.active {    //elementas nera atvaizduojamas, nebent jisai turi "active" class
             //display: block;
             display: flex;
@@ -215,4 +214,43 @@
             
         }
     }
+}
+
+// Media queries section about
+
+@media (max-width: 800px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .tab-navigation ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            margin: 0 50px;
+        }
+
+    }
+
+    .about .tab-content {
+
+        &.active {
+            display: flex;
+            flex-direction: column;  
+            align-content: center;
+            justify-content: center; 
+        }
+
+        .tab-content-text {
+            text-align: center;
+
+            p:last-child {
+                text-align: justify;
+            }
+        }
+
+    }
+    
 }
