@@ -116,6 +116,15 @@
     // transform: scaleX(0) scaleY(-20px);
 }
 
+// Media queries pricing section
+
+@media (max-width: 800px) {
+
+    .pricing-options .cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
 
