@@ -24,13 +24,36 @@ footer {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        margin-left: 50px;
+        // margin-left: 50px;
         font-size: 20px;
         color: #E27866;
         
         i {
-            margin-left: 100px;
+            margin: 10px 50px;
         }
     }
 }
 
+// Media queries
+
+@media (max-width: 820px) {
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        // align-content: center;
+    }
+
+    .container .social-icons {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    footer h4 {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
