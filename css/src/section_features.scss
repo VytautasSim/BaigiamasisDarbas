@@ -77,3 +77,24 @@
         }
     }
 }
+
+// Media queries section features
+
+@media (max-width: 800px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Features .container .features-container {
+        display: flex;
+        flex-direction: column;
+
+        .feature-text {
+            padding-top: 10px;
+        } 
+    }
+    
+}   
+
