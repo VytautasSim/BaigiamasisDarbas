@@ -10,13 +10,17 @@
         align-content: center;
         
         .big-logo-container {
-            margin: 90px 60px 90px 0;
+            // margin: 90px 60px 90px 0;
+            display: flex;
+            align-items: center;
+
             
             .big-logo-image {
                 position: relative;
                 padding: 10px;
-                top: 50%;
-                transform: translate(0%, -50%);
+                // top: 50%;
+                // right: 0;
+                // transform: translate(0%, -50%);
             }
             
         }
@@ -49,7 +53,7 @@
 
             p {
                 color: white;
-                width: 80%;
+                // width: 80%;
                 margin-bottom: 27px;
             }
 
@@ -96,5 +100,54 @@
 
 
 
+    }
+}
+
+// Media queries section logo text
+
+@media (max-width: 800px) {
+    .Big-logo .container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 0 60px;
+    }
+
+    .inside-header {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .Big-logo .container .big-logo-container {
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .Big-logo .container .big-text-container {
+        margin: 90px 0;
+           
+    }
+
+    .Big-logo .container .big-text-container .inside-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+    }
+
+    .Big-logo .container .big-text-container .inside-form {
+        // display: flex;
+        // // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        padding: 0 50px;
     }
 }
