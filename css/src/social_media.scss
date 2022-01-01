@@ -1,6 +1,6 @@
 .social-media {
     width: 100%;
-    z-index: 2;
+    // z-index: 2;
 
 
     .container {
@@ -34,5 +34,26 @@
                 margin-left: 100px;
             }
         }
+    }
+}
+
+// Media queries section hero
+
+@media (max-width: 800px) {
+    .social-media .container {
+        flex-direction: column;
+       
+    }
+
+    .social-text {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container .social-icons {
+        padding-bottom: 20px;
     }
 }
