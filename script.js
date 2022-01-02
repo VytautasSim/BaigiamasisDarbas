@@ -38,8 +38,8 @@ const swiper = new Swiper('.swiper', {
     autoHeight: true,
     spaceBetween: 120,
     loop: true,
-    // autoplay: {
-    //     delay: 2000,
+    autoplay: {
+        delay: 2000,
     },
   
     // If we need pagination
