@@ -57,6 +57,14 @@
             // box-sizing: border-box;
             transition: 0.3s ease-in-out;
 
+            // &:hover {
+            //     cursor: pointer;
+
+            //     .pop-up-message {
+            //         display: block;
+            //     }
+            // }
+
         
             .card-header {
                 top: 0;
@@ -81,23 +89,52 @@
                 
                 .offer-utility {
                     margin: 0;
-                    margin-bottom: 10px;
+                    // margin-bottom: 10px;
+                    padding-bottom: 10px;
                     font-size: 14px;
                     color: #FFFFFF;
                     opacity: 0.5;
                 }
 
-                .pop-up-message {
-                    position: relative;
-                    font-weight: bold;
-                    margin: 0;
-                    font-size: 14px;
-                    background-color: #41D395;
-                    padding: 10px 0;
-                }
+                // .pop-up-message-frame {
+                //     width: 100%;
+                //     height: 10px;
+                //     background-color: #41D395;
+                // }
+                
+                // .pop-up-message {
+                //     display: none;
+
+                //     // &:after {
+                //      // content: '';
+                //     position: relative;
+                //     font-weight: bold;
+                //     margin: 0;
+                //     font-size: 14px;
+                //     background-color: #41D395;
+                //     padding: 10px 0;                      
+                // }
                 
             }
-        
+
+            .pop-up-message-frame {
+                width: 100%;
+                height: 10px;
+                background-color: #41D395;
+            }
+            
+            .pop-up-message {
+                display: none;
+                // &:after {
+                //  content: '';
+                // position: relative;
+                font-weight: bold;
+                margin: 0;
+                font-size: 14px;
+                background-color: #41D395;
+                padding: 20px 0 10px 0;                      
+            }
+            
             li {
                 list-style: none;
                 font-size: 14px;
@@ -111,9 +148,16 @@
     }
 }
 
-.card:hover {
+// .pricing-options .cards-container :hover {
+//     cursor: pointer;
+//     // display: block;
+//     // transform: scaleX(0) scaleY(-20px);
+// }
+
+.pricing-options .cards-container .card:hover .pop-up-message {
     cursor: pointer;
-    // transform: scaleX(0) scaleY(-20px);
+    display: block;
+    
 }
 
 // Media queries pricing section
