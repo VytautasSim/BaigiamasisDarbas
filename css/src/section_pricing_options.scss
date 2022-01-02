@@ -132,7 +132,8 @@
                 margin: 0;
                 font-size: 14px;
                 background-color: #41D395;
-                padding: 20px 0 10px 0;                      
+                padding: 20px 0 10px 0; 
+                transition: 0.3s ease-in-out;                     
             }
             
             li {
@@ -157,6 +158,7 @@
 .pricing-options .cards-container .card:hover .pop-up-message {
     cursor: pointer;
     display: block;
+    transition: 1.3s ease-in-out;
     
 }
 
