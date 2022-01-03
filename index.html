@@ -42,14 +42,29 @@
                     <button>DOWNLOAD</button>                     
                 </div>
                 <div class="form-box">
-                    <form>
+                    <form class="form" id="form">
                         <h3 class="biger-text"> Try Your <span style="color:#E27866;padding-left:5px;padding-right:5px;"> FREE </span>Trial today</h3>
                         <h3 class="smaler-text">Your details</h3>
                         
                         <div class="text-input-lines">
-                            <input type="text" placeholder="First name" class="text-input">
-                            <input type="text" placeholder="Last name" class="text-input">  
-                            <input type="text" placeholder="Phone number" class="text-input">                      
+                            <div class="form-control success">
+                                <input type="text" placeholder="First name" class="text-input success" id="first-name">
+                                <i class="far fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span>Error message</span>
+                            </div>
+                            <div class="form-control error">
+                                <input type="text" placeholder="Last name" class="text-input error" id="last-name">
+                                <i class="far fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span>Error message</span>
+                            </div>  
+                            <div class="form-control">
+                                <input type="text" placeholder="Phone number" class="text-input" id="phone-number">
+                                <i class="far fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span>Error message</span>                      
+                            </div>
                         </div>
 
                         <h3 class="smaler-text">Type of subscription</h3>
@@ -71,7 +86,8 @@
                         </div> -->
                     </form>
                     <div class="submit-buton">
-                        <input type="submit" value="GET STARTED" class="get-started">
+                        <button class="get-started">GET STARTED</button>
+                        <!-- <input type="submit" value="GET STARTED" class="get-started"> -->
                     </div>
                 </div>
             </div>

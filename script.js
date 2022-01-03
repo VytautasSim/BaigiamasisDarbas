@@ -89,3 +89,4 @@ function getCurrentWeatherInCelsius() {
 }
 
 window.addEventListener('load',getCurrentWeatherInCelsius);
+
