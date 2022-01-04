@@ -90,3 +90,43 @@ function getCurrentWeatherInCelsius() {
 
 window.addEventListener('load',getCurrentWeatherInCelsius);
 
+// Section Hero javascript
+
+const form = document.getElementById('form');
+const first_name = document.getElementById('first_name');
+const last_name = document.getElementById('last_name');
+const phone_number = document.getElementById('phone_number');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    checkInputs();
+});
+
+function checkInputs() {
+    //reikia gauti is inputu vertes
+    const first_nameValue = first_name.value.trim();
+    const last_nameValue = last_name.value.trim();
+    const phone_numberValue = phone_number.value.trim();
+
+    if(first_nameValue === '') {
+        //show error
+        //add error class
+        setErrorFor(first_name, "This field can not be blank");
+
+    } else {
+        //add success class
+        setSuccessFor(first_name);
+    }
+}
+
+function setErrorFor(input, message) {
+    const formControl = input.parentElement;
+    const span = formControl.querySelector('span');
+
+    // add error message inside span
+    span.innerText = message;
+
+    //add error class
+    form.Control.className = 'form-control error';
+}
